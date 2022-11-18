@@ -14,5 +14,10 @@ def registration():
     return render_template("registration.html")
 
 
+@app.route('/vacancies')
+def vacancies():
+    return render_template("vacancies.html")
+
+
 if __name__ == "__main__":
     app.run(debug=True)
