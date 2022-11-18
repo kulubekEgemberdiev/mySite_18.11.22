@@ -20,7 +20,24 @@
 
             <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
                 <li><a href="#" class="nav-link px-2 text-secondary">Главная</a></li>
-                <li><a href="#" class="nav-link px-2 text-white">Каталог</a></li>
+
+                <li>
+                    <a class="nav-link px-2 text-white dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                        Каталог товаров
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Lenovo</a></li>
+                        <li><a class="dropdown-item" href="#">HP</a></li>
+                        <li><a class="dropdown-item" href="#">Acer</a></li>
+                        <li><a class="dropdown-item" href="#">Samsung</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Другие модели</a></li>
+                    </ul>
+                </li>
+
                 <li><a href="#" class="nav-link px-2 text-white">Новинки</a></li>
                 <li><a href="#" class="nav-link px-2 text-white">Доставка</a></li>
                 <li><a href="#" class="nav-link px-2 text-white">Контакты</a></li>
@@ -47,10 +64,31 @@
             <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Вакансии</a></li>
             <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQ для клиентов</a></li>
             <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Вопросы и ответы</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Наши контакты</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted" data-bs-toggle="modal"
+                                    data-bs-target="#contacts">Контакты</a></li>
             <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">О нашем магазине</a></li>
         </ul>
         <p class="text-center text-muted">© 2022 Магазин ноутбуков, Бишкек</p>
+<!--        modal-->
+        <div class="modal fade" id="contacts" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Наши контакты</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+            <p>+996 (705) - 111 - 222 - 📞</p>
+            <p>+996 (505) - 111 - 222 - (WhatsApp)</p>
+            <p>город Бишкек, улица Джеки Чана 50</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Закрыть</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--        /modal-->
     </footer>
 </div>
 
